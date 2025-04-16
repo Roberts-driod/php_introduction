@@ -7,6 +7,10 @@
 </head>
 <body>
     
+<form action="includes/signup.inc.php" method="post">
+    <input type="text" name="username" placeholder="username"><br>
+    <input type="password" name="pwd" placeholder="password"><br>
+    <button >Signup</button>
 
 
 <?php
