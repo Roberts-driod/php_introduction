@@ -5,7 +5,7 @@ class Car
     // Properties / Fields
     private $brand;
     private $color;
-    public $vehicleType = "car";
+   
 
     // Constructor
     public function __construct($brand, $color = "none")
@@ -13,6 +13,28 @@ class Car
         $this->brand = $brand;
         $this->color = $color;
     }
+// Getter and Setter methods
+    public function getBrand()
+    {
+        return $this->brand;
+    }
+    public function setBrand($brand)
+    {
+        $this->brand = $brand;
+    }
+    public function getColor()
+    {
+        return $this->color;
+    }
+    public function setColor($color)
+    {
+        $allowedColors = ["red", "green", "blue", "yellow"];
+        if (!in_array($color, $allowedColors)) {
+            $this->color = $color;
+        }
+       
+    }
+
     // Method
 
     public function getCarInfo()
@@ -23,4 +45,3 @@ class Car
 
 $car01 = new Car("Volvo", "green");
 echo $car01->getCarInfo() . "<br>";
-echo $car01->vehicleType . "<br>";
