@@ -8,7 +8,7 @@ class Car
     private $vehicleType = "car";
 
     // Constructor
-    public function __construct($brand, $color)
+    public function __construct($brand, $color = "none")
     {
         $this->brand = $brand;
         $this->color = $color;
@@ -16,4 +16,7 @@ class Car
 }
 
 $car01 = new Car("Volvo", "green");
-$car02 = new Car("BMW", "blue");
+$car02 = new Car("BMW");
+$car02 = new Car("BMW");
+$car02 = new Car("BMW");
+$car02 = new Car("BMW");
