@@ -16,7 +16,4 @@ class Car
 }
 
 $car01 = new Car("Volvo", "green");
-$car02 = new Car("BMW");
-$car02 = new Car("BMW");
-$car02 = new Car("BMW");
-$car02 = new Car("BMW");
+echo $car01->$vehicleType;
