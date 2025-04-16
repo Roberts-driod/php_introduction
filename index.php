@@ -11,8 +11,13 @@
 
 <?php
 
+$brand = "Volvo";
+$color = "green";
+function getCarInfo($brand, $color) {
+    return "Brand:" .  $brand . ' Color: ' .$color;
 
-
+}
+echo getCarInfo($brand, $color) . "<br>";
 
 ?>
 
