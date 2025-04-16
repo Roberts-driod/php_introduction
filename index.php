@@ -11,13 +11,10 @@
 
 <?php
 
-$brand = "Volvo";
-$color = "green";
-function getCarInfo($brand, $color) {
-    return "Brand:" .  $brand . ' Color: ' .$color;
+require_once 'Classes/Car.php';
 
-}
-echo getCarInfo($brand, $color) . "<br>";
+$car01 = new Car("BMW", "green");
+$car01->vehicleType;
 
 ?>
 
